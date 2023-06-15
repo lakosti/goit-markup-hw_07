@@ -92,6 +92,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-black {
@@ -108,18 +109,24 @@ img {
   align-items: center;
 }
 .header-logo {
-  margin-right: 93px;
+  margin-right: 76px;
 }
-.nav-link,
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--second-text-color);
+  transition: color var(--animation-time);
+}
 .contact-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #434455;
+  font-weight: 400px;
+  line-height: 1.5;
   transition: color var(--animation-time);
 }
 .nav-link:hover,
@@ -130,7 +137,7 @@ img {
   display: flex;
 }
 .nav-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 .nav-item {
   position: relative;
@@ -159,7 +166,7 @@ img {
   margin-left: auto;
 }
 .contact-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .color-contact {
@@ -703,19 +710,23 @@ img {
 /* ----------------------------------------------------------Portfolio-------------------------------------------- */
 
 /* -----------------------------BUTTON----------------------------------------- */
-
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
 .portfolio-btn {
-  padding: 6px 22px;
+  padding: 12px 24px;
   border: none;
   border-radius: 4px;
-  background-color: var(--backgound-second-color);
-  color: var(--second-text-color);
+  background-color: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  color: var(--accent-color);
   transition: background-color var(--animation-time), color var(--animation-time),
     box-shadow var(--animation-time);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  background-color: var(--accent-color);
+  background-color: #404bbf;
   color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -724,10 +735,10 @@ img {
 .portfolio-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 .portfolio-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 24px;
 }
 .portfolio-btn-text {
   font-family: inherit;
@@ -741,7 +752,8 @@ img {
 .card {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .card-link {
   display: block;
@@ -754,12 +766,12 @@ img {
 }
 
 .card-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin: 15px;
+  /* flex-basis: calc(100% / 3 - 24px); */
+  width: 360px;
+  /* height: 420px; */
 }
 .card-relative {
   position: relative;
-  height: 300px;
   overflow: hidden;
 }
 
@@ -768,7 +780,7 @@ img {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 300px;
+  height: 100%;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 40px;
@@ -787,15 +799,15 @@ img {
 }
 
 .card-subtitle {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: var(--second-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .card-text {
+  color: #434455;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.5;
 }
 .card-text-possition {
   padding-top: 32px;
