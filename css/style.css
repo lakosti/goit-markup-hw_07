@@ -471,7 +471,9 @@ img {
   border-radius: 4px;
   color: var(--accent-text-color);
 }
-
+.input-footer::placeholder {
+  color: #ffffff;
+}
 .footer-btn {
   display: flex;
   align-items: center;
@@ -617,13 +619,14 @@ img {
 }
 .modal-checkbox-wrap {
   display: flex;
-  align-items: baseline;
-
+  align-items: center;
+  /* align-items: baseline; */
   margin-bottom: var(--typical-margin);
 }
-.input-check {
+/* .input-check {
   padding-left: 54px;
-}
+} */
+
 .check-text {
   display: flex;
   align-items: center;
