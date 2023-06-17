@@ -88,7 +88,7 @@ img {
 .header-logo,
 .footer-logo {
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -147,7 +147,7 @@ img {
 }
 .active::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: '';
   width: 100%;
@@ -226,6 +226,7 @@ img {
 }
 .hero-btn {
   padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transform: scale(1);
   transition-duration: 500ms;
 }
@@ -287,17 +288,19 @@ img {
 }
 .work-list {
   display: flex;
-  margin: -15px;
+  gap: 24px;
+  /* mpargin: -15px; */
 }
 .work-item {
   position: relative;
-  flex-basis: calc(100% / 3 - 30px);
-  margin: 15px;
+  flex-basis: calc(100% / 2 - 24px);
+  /* margin: 15px; */
 }
 
 .work-title,
 .team-title,
 .clients-title {
+  font-weight: 700px;
   margin-bottom: 72px;
   text-transform: capitalize;
 
@@ -471,13 +474,17 @@ img {
 
 .input-footer-wrap {
   display: flex;
+  align-items: center;
 }
 .input-footer {
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-right: 24px;
+  font-size: 12px;
   width: 264px;
+  height: 40px;
+  line-height: 2;
   background-color: transparent;
   outline: transparent;
   border: 1px solid #ffffff;
@@ -486,8 +493,6 @@ img {
 }
 .input-footer::placeholder {
   color: #ffffff;
-  font-size: 12px;
-  line-height: 2;
 }
 .footer-btn {
   display: flex;
