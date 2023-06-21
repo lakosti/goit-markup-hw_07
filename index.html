@@ -27,10 +27,10 @@
         <a href="./index.html" class="header-logo link"
           >Web<span class="logo-black">Studio</span></a
         >
-<a href="" class="humburber-link link">
-    <svg class="icon-menu icon-charm_menu-hamburger" width="32" height="22">
-      <use href="./images/icons.svg.svg#icon-charm_menu-hamburger"></use>
-          </svg>
+        <a href="" class="humburber-link link">
+          <svg class="icon-menu icon-charm_menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg.svg#icon-charm_menu-hamburger"></use></svg
+        ></a>
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-item">
@@ -106,18 +106,53 @@
         <div class="container">
           <h2 class="work-title">What are we doing</h2>
           <ul class="work-list list">
-            <li class="work-item">
-              <div class="work-relative">
-                <img src="./images/work1.jpg" alt="Website development" width="370" />
-              </div>
+            <li>
+              <picture>
+                <source
+                  srcset="./images/work1.webp 1x, ./images/work1@2x.webp 2x"
+                  media="(min-width: 1158px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+
+                <img src="./images/work1.jpg" alt="computer" width="360" height="300" />
+              </picture>
             </li>
-            <li class="work-item">
-              <img src="./images/work2.jpg" alt="Website layout" width="370" />
+            <li>
+              <picture>
+                <source
+                  srcset="./images/work2.webp 1x, ./images/work2@2x.webp 2x"
+                  media="(min-width: 1158px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+
+                <img src="./images/work2.jpg" alt="computer" width="360" height="300" />
+              </picture>
             </li>
-            <li class="work-item">
-              <div class="work-relative">
-                <img src="./images/work3.jpg" alt="Color variables" width="370" />
-              </div>
+            <li>
+              <picture>
+                <source
+                  srcset="./images/work3.webp 1x, ./images/work3@2x.webp 2x"
+                  media="(min-width: 1158px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
+
+                <img src="./images/work3.jpg" alt="computer" width="360" height="300" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -128,7 +163,16 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/team1.jpg" alt="Igor Demyanenko" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team1.webp 1x, ./images/team1@2x.webp 2x"
+                  type="image/webp"
+                />
+
+                <source srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x" />
+
+                <img src="./images/team1.jpg" alt="Mark Guerrero" width="264" height="260" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -162,7 +206,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team2.jpg" alt="Olga Repina" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team2.webp 1x, ./images/team2@2x.webp 2x"
+                  type="image/webp"
+                />
+
+                <source srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x" />
+                <img src="./images/team2.jpg" alt="Tom Ford" width="264" height="260" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -196,7 +248,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team3.jpg" alt="Nikolai Tarasov" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team3.webp 1x, ./images/team3@2x.webp 2x"
+                  type="image/webp"
+                />
+
+                <source srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x" />
+                <img src="./images/team3.jpg" alt="Camila Garcia" width="264" height="260" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -230,7 +290,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team4.jpg" alt="Mikhail Ermakov" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team4.webp 1x, ./images/team4@2x.webp 2x"
+                  type="image/webp"
+                />
+
+                <source srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x" />
+                <img src="./images/team4.jpg" alt="Daniel Wilson" width="264" height="260" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -403,7 +471,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal-bnt" data-modal-close>
           <svg class="icon-close-modal" width="15" height="15">
@@ -477,7 +545,7 @@
               class="input-check visually-hidden"
             />
             <label for="privacy" class="check-text"
-              ><span
+              ><span class="icon-wrap"
                 ><svg class="check-icon" width="20" height="15">
                   <use href="./images/icons.svg.svg#icon-check"></use></svg
               ></span>
@@ -489,6 +557,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
