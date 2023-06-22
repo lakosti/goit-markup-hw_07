@@ -31,64 +31,6 @@
           <svg class="icon-menu icon-charm_menu-hamburger" width="32" height="22">
             <use href="./images/icons.svg.svg#icon-charm_menu-hamburger"></use></svg
         ></a>
-        <!-- <div class="mob-menu is-hidden js-menu-container">
-          <div class="container">
-            <div>
-              <button type="button" class="close-menu-btn js-close-menu">
-                <svg class="icon-close-menu" width="40" height="40">
-                  <use href="./images/icons.svg.svg#close-burger"></use>
-                </svg>
-              </button>
-              <ul class="mob-menu__list list">
-                <li class="mob-menu__item">
-                  <a
-                    href="./index.html"
-                    class="mob-menu__link mob-menu--active link mob-menu--color"
-                    >Студия</a
-                  >
-                </li>
-                <li class="mob-menu__item">
-                  <a href="./portfolio.html" class="mob-menu__link link mob-menu--color"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="mob-menu__item">
-                  <a href="" class="mob-menu__link link mob-menu--color">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="mob-contact list">
-                <li class="mob-contact__item-tel">
-                  <a href="tel:+380961111111" class="mob-contact__link mob--color link"
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-                <li class="mob-contact__item-mail">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="mob-contact__link mob-contact--color link"
-                    >info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-              <ul class="mob-soc list">
-                <li class="mob-soc__item mob-soc__after">
-                  <a href="" class="mob-soc__link mob--color link">Instagram</a>
-                </li>
-                <li class="mob-soc__item mob-soc__after">
-                  <a href="" class="mob-soc__link mob--color link">Twitter</a>
-                </li>
-                <li class="mob-soc__item mob-soc__after">
-                  <a href="" class="mob-soc__link mob--color link">Facebook</a>
-                </li>
-                <li class="mob-soc__item no-border">
-                  <a href="" class="mob-soc__link mob--color link">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-item">
@@ -112,6 +54,86 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mob-menu">
+        <div class="container">
+          <div>
+            <button type="button" class="close-modal-bnt mob-btn">
+              <svg class="icon-close-modal" width="24" height="24">
+                <use href="./images/icons.svg.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+            <ul class="mob-list list">
+              <li class="mob-item">
+                <a href="./index.html" class="mob-link link active">Studio</a>
+              </li>
+              <li class="mob-item">
+                <a href="./portfolio.html" class="mob-link link">Portfolio</a>
+              </li>
+              <li class="mob-item"><a href="#" class="mob-link link">Contacts</a></li>
+            </ul>
+          </div>
+          <address class="contact-inform">
+            <a href="tel:+380961111111" class="contact-inform-tel link">+11 (000) 111-11-11</a>
+            <a href="mailto:info@devstudio.com" class="contact-inform-mail link"
+              >info@devstudio.com</a
+            >
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a
+                  href=""
+                  class="mob-soc-link"
+                  aria-label="link to Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  href=""
+                  class="mob-soc-link"
+                  aria-label="link to Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  href=""
+                  class="mob-soc-link"
+                  aria-label="link to Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  href=""
+                  class="mob-soc-link"
+                  aria-label="link to Linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <!--Main контейнер-->
@@ -531,7 +553,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-modal-bnt" data-modal-close>
+        <button type="button" class="close-modal-bnt close-btn-bg" data-modal-close>
           <svg class="icon-close-modal" width="15" height="15">
             <use href="./images/icons.svg.svg#icon-close-modal"></use>
           </svg>
