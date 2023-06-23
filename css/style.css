@@ -40,6 +40,9 @@ img {
 .list {
   list-style: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .link {
   text-decoration: none;
 }
@@ -332,10 +335,13 @@ img {
   height: 100vh;
   background-color: var(--accent-text-color);
   padding: 80px 24px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  opacity: 1;
 }
-.mob-menu .container {
-  display: unset;
-}
+
 .mob-link,
 .contact-inform-tel {
   display: block;
@@ -344,9 +350,10 @@ img {
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
-.mob-item:not(:last-child) {
+.mob-item {
   margin-bottom: 40px;
 }
+
 .mob-link {
   font-size: 36px;
   color: var(--second-text-color);
@@ -369,6 +376,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.4px;
 }
+.mob-active,
 .active {
   color: #404bbf;
 }
@@ -399,13 +407,9 @@ img {
 }
 @media screen and (min-width: 428px) {
   .mob-menu .container {
-    max-width: 428px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
   }
   .contact-inform-tel {
-    width: 353px;
+    /* width: 353px; */
     font-size: 36px;
   }
 }
