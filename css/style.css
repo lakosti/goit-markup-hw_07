@@ -416,7 +416,7 @@ img {
 .mob-soc-item .mob-soc-link:focus {
   background-color: var(--icon-hover);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .contact-inform-tel {
     font-size: 36px;
   }
