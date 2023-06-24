@@ -222,6 +222,12 @@ img {
   display: none;
 }
 @media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 120px;
+  }
+  .nav {
+    margin-right: 121px;
+  }
   .nav {
     display: block;
   }
@@ -688,7 +694,6 @@ img {
   fill: var(--accent-text-color);
 } */
 .team-soc-link {
-  padding: 12px;
   background-color: var(--accent-color);
   color: var(--team-icon-color);
 }
